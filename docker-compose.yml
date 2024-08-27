@@ -2,6 +2,7 @@ version: '3'
 services:
   node-comp-app:
     container_name: node-comp
+    image: mohamedmoniem/tresmerge-docker
     ports:
       - "4000:4000"  
     env_file:

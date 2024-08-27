@@ -61,7 +61,7 @@ const redisClient = redis.createClient({url: `redis://${REDIS_HOST}:${REDIS_PORT
 
 app.get('/' ,(req,res) => {
   redisClient.set('products', ' categories...')
-  res.send('<h1>Hello  </h1>') } );
+  res.send('<h1>Hello using dockerhub </h1>') } );
 
 
   app.get('/data' , async (req,res) => {
