@@ -63,7 +63,7 @@ app.get('/' ,(req,res) => {
   app.get('/data' , async (req,res) => {
     const products = await redisClient.get('products')
      redisClient.get('products' , 'categories...')
-     res.send(`<h1>Hello version3</h1>  <h2> ${products}</h2> `)  } );
+     res.send(`<h1>Hello</h1>  <h2> ${products}</h2> `)  } );
     
 
 app.listen(port, ()=> console.log(`app is run on port: ${port}`))
